@@ -18,8 +18,7 @@ public class FacultyController {
 	@PostMapping("/savefaculty")
 	public String facultysave(@RequestBody Faculty faculty) {
 		System.out.println("user triggred for save faculty data");
-		IdCardDetails idcarddetais = faculty.getIdcarddetais();
-		faculty.setIdcarddetais(idcarddetais);
+		
 
 		savefaculty.save(faculty);
 
